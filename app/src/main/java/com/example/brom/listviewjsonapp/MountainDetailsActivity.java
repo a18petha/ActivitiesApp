@@ -16,8 +16,8 @@ public class MountainDetailsActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         TextView test = (TextView) findViewById(R.id.world);
-        intent.getStringExtra("mountainNames");
-        test.setText("Load");
+        String mountainNames = intent.getStringExtra("mountainNames");
+        test.setText("Load " + mountainNames);
 
     }
 }
